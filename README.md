@@ -20,6 +20,6 @@ class Hackathon : HackathonChallenge
 
 class HackathonChallenge
 {
-  /* TODO... */
+    /* TODO... */
 }
 ```
