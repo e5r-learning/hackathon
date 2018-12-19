@@ -69,15 +69,9 @@ class Hackathon : HackathonChallenge
 
         bool errouDivisao = false;
 
-        try
-        {
-            // 10 / 0 = !{erro de divisão por zero}
-            Divide(10, 0);
-        }
-        catch (DivideByZeroException)
-        {
-            errouDivisao = true;
-        }
+        // 10 / 0 = !{erro de divisão por zero}
+        try { Divide(10, 0); }
+        catch (DivideByZeroException) { errouDivisao = true; }
 
         Assert(errouDivisao);
     }
