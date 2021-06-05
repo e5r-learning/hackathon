@@ -86,10 +86,11 @@ IList<object>;
 ```
 
 Uma função que receba uma lista, um número de página atual, um número de registros por página,
-um limite máximo para exibição de páginas, dev:
+um limite máximo para exibição de páginas, deve:
 
-* Retornar uma lista de páginas onde a página atual esteja no centro da lista (o mais próximo do centro)
-* Não exceder o limite máximo de páginas a exibir.
+* Calcular o número de páginas possíveis dentro da lista fornecida;
+* Retornar uma lista de páginas onde a página atual esteja o maix próximo possível do centro da lista;
+* Não exceder o limite máximo de páginas a exibir;
 
 Expectativa
 ```
