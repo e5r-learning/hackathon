@@ -77,3 +77,49 @@ class Hackathon : HackathonChallenge
     }
 }
 ```
+
+## Desafio 3 - Paginação
+
+Imagine uma lista de itens qualquer:
+```cs
+IList<object>;
+```
+
+Uma função que receba uma lista, um número de página atual, um número de registros por página,
+um limite máximo para exibição de páginas, dev:
+
+* Retornar uma lista de páginas onde a página atual esteja no centro da lista (o mais próximo do centro)
+* Não exceder o limite máximo de páginas a exibir.
+
+Expectativa
+```
+maximoPaginaExibicao = 5
+totalPaginas         = 10
+paginaAtual          = 5
+
+        1  2  3  4  5
+      +---------------+
+1, 2, | 3, 4, 5, 6, 7 |, 8, 9, 10
+              |
+              *
+
+maximoPaginaExibicao = 5
+totalPaginas         = 10
+paginaAtual          = 2
+
+  1  2  3  4  5
++---------------+
+| 1, 2, 3, 4, 5 |, 6, 7, 8, 9, 10
+     |
+     *
+
+maximoPaginaExibicao = 5
+totalPaginas         = 10
+paginaAtual          = 10
+
+                  1  2  3  4  5
+                +----------------+
+1, 2, 3, 4, 5 , | 6, 7, 8, 9, 10 |
+                              |
+                              *
+```
