@@ -124,3 +124,23 @@ paginaAtual          = 10
                               |
                               *
 ```
+
+### Desafio 4 - Cron Jobs
+
+Construa um executor de jobs tipo CRON
+
+- Pense em um agendador de próximos passos
+- Pense em um executor independente
+- Pense em um sistema de log independente
+- Pense em executar em containers
+
+### Desafio 5 - Notas de lançamento Git
+
+Construa um executável que seja capaz de ler um repositório git
+de um commit em diante e montar um Markdown de notas de lançamento.
+
+- Pense em [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+- Pense em agrupamento de commits por tipo de contribuição
+- Pense em links
+- Pense em mais detalhes
+- Pense em alertas de _breaking changes_
